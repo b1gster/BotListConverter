@@ -33,7 +33,7 @@ argparser = argparse.ArgumentParser(
 argparser.add_argument(
     "-l", "--list", 
     help="The list to download.", 
-    choices=["bot", "cheater", "tacobot", "pazer", "mcdb", "groups", "sleepy-rgl", "sleepy-bot", "all", "custom"])
+    choices=["bot", "cheater", "tacobot", "pazer", "mcdb", "groups", "sleepy-rgl", "hacker-police", "all", "custom"])
 
 argparser.add_argument(
     "-f", "--format", 
@@ -66,8 +66,8 @@ def get_pretty_name(lst):
         return "Steam Groups"
     elif lst == "sleepy-rgl":
         return "Sleepy List - RGL"
-    elif lst == "sleepy-bot":
-        return "Sleepy List - Bots"
+    elif lst == "hacker-police":
+        return "Vorobey - Hacker Police"
     else:
         return lst
     
@@ -93,7 +93,7 @@ def dl_list(lst, is_all):
             ids = parser.parse_bot_list(response.text)
         elif lst == "pazer":
             ids = parser.parse_pazer_list(response.text)
-        elif lst in ["sleepy-rgl", "sleepy-bot"]:
+        elif lst in ["sleepy-rgl", "hacker-police"]:
             ids = parser.parse_tf2bd_list(response.text)
         else:
             ids = response.text.splitlines()
@@ -216,7 +216,7 @@ def main(lst=args.list, fmt=args.format, merge=args.merge):
         return
     ext = get_extension(fmt)
     if lst == "all":
-        lists_to_fetch = ["bot", "cheater", "tacobot", "pazer", "mcdb", "groups", "sleepy-rgl", "sleepy-bot"]
+        lists_to_fetch = ["bot", "cheater", "tacobot", "pazer", "mcdb", "groups", "sleepy-rgl", "hacker-police"]
         combined_dicts = []
         for l in lists_to_fetch:
             print(f"Fetching '{get_pretty_name(l)}'...")
