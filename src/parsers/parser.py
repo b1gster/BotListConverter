@@ -10,7 +10,7 @@ LISTS = {
     "tacobot" : "https://raw.githubusercontent.com/d3fc0n6/TacobotList/master/64ids", # STEAMID64
     "pazer" : "https://raw.githubusercontent.com/d3fc0n6/PazerList/master/list.cfg", # STEAMID3-N
     "sleepy-rgl": "https://raw.githubusercontent.com/surepy/tf2db-sleepy-list/main/playerlist.rgl-gg.json", # STEAMID64
-    "sleepy-bot": "https://raw.githubusercontent.com/surepy/tf2db-sleepy-list/main/playerlist.sleepy-bots.merged.json" # STEAMID3-B
+    "hacker-police": "https://raw.githubusercontent.com/AveraFox/Tom/main/playerlist.vorobey-hackerpolice.json" # STEAMID3-B
 }
 
 def get_latest_archived_url(url):
