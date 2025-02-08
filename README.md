@@ -21,7 +21,7 @@ Script that converts BotLists into a valid playerlist of a chosen format.
 - megascatterbomb's Mega Cheater Database (`mcdb`)
 - Groups of your own choice (`groups`) (More details below.)
 - Sleepy List RGL bans (`sleepy-rgl`)
-- Sleepy List bot list (`sleepy-bot`)
+- Hacker Police's marked cheater list (`hacker-police`)
 - Your own ID list (`custom`) (HEAVILY WIP, details below)
 
 # How to use:
